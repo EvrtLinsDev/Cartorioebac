@@ -117,12 +117,23 @@ int deletar()//função responsável por deletar os usuários do sistema
 	//pausando o sistema
 }
 int main()
-{
+	{
 	int opcao=0; //definindo as variáveis
 	int laco=1;
+	char senhadigitada[]="a";
+	int comparacao;
 	
-	for(laco=1;laco=1;)
-	{
+	printf ("*** Primeira Tela :D ***\n\n");
+	printf("Login de administrador!\n\n Digite sua senha:");
+	scanf("%s",senhadigitada);
+	
+	comparacao = strcmp(senhadigitada, "admin"); //strcmp comparando o valor das strings
+	
+	if(comparacao == 0)
+	{	
+		system ("cls");
+		for(laco=1;laco=1;)
+		{	
 
 		system("cls");//responsável por limpar a tela
 		
@@ -167,4 +178,8 @@ int main()
 			break;
 		}//fim da  seleção do menu
 		}
+		}
+		else
+		printf("senha incorreta!");
 	}	
+	
